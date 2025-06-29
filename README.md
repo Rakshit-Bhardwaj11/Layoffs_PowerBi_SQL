@@ -54,5 +54,7 @@ This dashboard can be used by:
 
 ---
 
+markdown
+
 **Rakshit Bhardwaj**  
-🔗 [LinkedIn](www.linkedin.com/in/rakshitbhardwaj11) 
+🔗 [LinkedIn](https://www.linkedin.com/in/rakshitbhardwaj11)
