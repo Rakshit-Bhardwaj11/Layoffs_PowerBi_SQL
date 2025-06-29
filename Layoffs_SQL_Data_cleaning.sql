@@ -9,7 +9,7 @@ select *
 Insert world_layoffs.layoffs_staging
 Select * from world_layoffs.layoffs;
 
--- Step-2 -- Finding suplicates in the table
+-- Step-2 -- Finding duplicates in the table
 
 Select *
 From world_layoffs.layoffs_staging;
@@ -19,7 +19,7 @@ Select company,industry,total_laid_off,`date`,
 		Partition by company,location, industry,total_laid_off,percentage_laid_off,`date`,stage,country,funds_raised_millions)
         as row_num
 From world_layoffs.layoffs_staging;
-	-- Now we have selected the duploicates rows
+	-- Now we have selected the duplicates rows
 Select*
 From(Select company,location, industry,total_laid_off,percentage_laid_off,`date`,stage,country,funds_raised_millions,
 	row_number() Over(
